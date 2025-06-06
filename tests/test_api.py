@@ -5,7 +5,7 @@ from data import test_data
 
 base_url = "https://web-gate.chitai-gorod.ru"
 # на сайте читай-город необходимо взять токен (access-token), в разделе cookies.
-token_key = " " # сюда надо встfвить токен с сайта
+token_key = "Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDkzOTgzNTgsImlhdCI6MTc0OTIzMDM1OCwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjBjZjNkMWVkYmUwMWY4YjkwODZiOTRmYzQwNGZmNzZjNWRjNDg5ZWM3OWEzMjJjYmEwYmQ0YjA3OWE1NTBhYzEiLCJ0eXBlIjoxMH0.e8KfxKBeamXhQZsZ50AcdtPrXH0iZcShkQmQm0kWIF4" # сюда надо встfвить токен с сайта
 headers = {
     "accept": "application/json",
     "accept-language": "ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7",
