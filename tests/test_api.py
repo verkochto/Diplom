@@ -49,3 +49,11 @@ def test_pay_product():
 def test_del_cart():
     resp = requests.delete(base_url + '/api/v1/cart/product/186354025', headers=headers)
     assert resp.status_code == 404
+
+@allure.epic("API Тестирование")
+@allure.feature("Поиск книг")
+@allure.title("Тестирование поиска с пустым запросом")
+@allure.description("Проверка, что API возвращает ошибку при пустом поисковом запросе.")
+def test_negative_api_empty_search():
+    resp = requests.get(f"{base_url}search/product?phrase=", headers=headers)
+    assert resp.status_code == 400
