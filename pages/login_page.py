@@ -4,7 +4,7 @@ from selenium.webdriver.common.keys import Keys
 class LoginPage:
     def __init__(self, driver):
         self.driver = driver
-        self.url = "https://www.chitai-gorod.ru/login" 
+        self.url = "https://www.chitai-gorod.ru" #изменила url
 
     def open(self):
         self.driver.get(self.url)
